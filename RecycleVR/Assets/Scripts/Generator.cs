@@ -30,7 +30,7 @@ public class Generator : MonoBehaviour
         GameObject prefab = prefabs[Random.Range(0, prefabs.Length)];
 
         // Genera una posición aleatoria dentro de la plataforma
-        Vector3 spawnPosition = plataforma.position + new Vector3(Random.Range(-0.5f, 0.5f), 0.5f, 0.5f);
+        Vector3 spawnPosition = plataforma.position + new Vector3(Random.Range(-0.3f, 0.3f), 0.3f, 0.3f);
 
         // Instancia el prefab en la posición generada
         Instantiate(prefab, spawnPosition, Quaternion.identity);
